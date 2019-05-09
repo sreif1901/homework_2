@@ -1,0 +1,24 @@
+#User needs to select a number between 1-100
+#program counts towards this number
+#+replaces all values devidiable by 3 with fizz
+#+replaces all values devidiable by 5 with buzz
+#+replaces all values devidiable by 3 and 5 with fizzbuzz
+print("")
+range_low=1
+range_high=100
+print("Please select a integral number between "+str(range_low)+" and "+str(range_high)+":")
+number=input("number: ")
+print("")
+if int(number) < range_low or int(number) > range_high:
+    print("Selected number is out of range.")
+else:
+    for x in range(int(number)):
+        y=x+1
+        if y%3==0 and y%5==0:
+            print("fizzbuzz")
+        elif y%3==0:
+            print("fizz")
+        elif y%5 == 0:
+            print("buzz")
+        else:
+            print(y)
