@@ -1,0 +1,12 @@
+#how to convert a string to lowercase/uppercase?
+
+test="Hello MY FrieNd!"
+print("")
+print("Test-String:")
+print(test)
+print("")
+print("All lower: ")
+print(test.lower())
+print("")
+print("All upper: ")
+print(test.upper())
